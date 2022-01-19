@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+body {
+    color: #333333;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin-left: auto; /* centralizar o body */
+    margin-right: auto;
+    width: 940px; 
+}
+
+.sacola {
+    background-image: url(../img/sacola.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    font-size: 14px;
+    padding-right: 35px;
+    padding-top: 8px;
+    text-align: right;
+    width: 140px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header {
+    position: relative;
+}
+
+.menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.menu-opcoes ul {
+    font-size: 15px;
+}
+
+.menu-opcoes a {
+    color: #003366;
+}
+
+.menu-opcoes ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+
+
+h1 {
+    padding: 10px;
+    background-image: url(../img/body-background.png);
+}
+
+h1 + p {
+    text-indent: 0;
+}
+
+h2 {
+    margin-top: 30px;
+    border-bottom: 2px solid #333333;
+}
+
+p {
+    padding: 0 45px;
+    text-indent: 15px;
+}
+
+p::first-letter {
+    font-weight: bold;
+}
+
+p::first-line {
+    font-variant: small-caps;
+}
+
+#centro-de-distribuicao {
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    
+}
+
+#familia-pelho {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+figure {
+    background-color: #F2EDED;
+    border: 1px solid #ccc;
+    padding: 15px; 
+    margin: 30px;
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+footer {
+    background-image: url(../img/fundo-rodape.png);
+
+    clear: both;
+    padding: 20px 0;
+}
+
+footer .container {
+    position: relative;
+}
+
+.social {
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+
+.social li {
+    float: left;
+    margin-left:  25px;
+}
+
+.social a {
+    /* tamanho da imagem */
+    height: 32px;
+    width: 32px;
+    /* image replacement */
+    display: block;
+    text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"] {
+    background-image: url(../img/facebook.png);
+}
+
+.social a[href*="twitter.com"] {
+    background-image: url(../img/twitter.png);
+}
+
+.social a[href*="instagram.com"] {
+    background-image: url(..//img/instagram.png);
+}
+
