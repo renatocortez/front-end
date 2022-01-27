@@ -1,103 +1,121 @@
-@charset "UTF-8";
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-.cores label::after {
-    position: absolute;
-    top: 30px;
-    cursor: pointer;
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirror Fashion</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/produto.css">
+</head>
 
-    border: 6px solid rgba(0, 0, 0, 0);
-    transition: 1s;
+<body>
 
-    box-sizing: border-box;
-    content: '';
-    display: block;
+    <header class="container">
+        <h1>
+            <img src="img/logo.png" alt="Logo da Mirror Fashion">
+        </h1>
 
-    border-radius: 50%;
-    width: 50px;
-    height:  50px;
-}
+        <p class="sacola">
+            Nenhum item na sacola de compras
+        </p>
 
-.cores label:hover::after {
-    border: 6px solid rgba(0, 0, 0, 0.1);
-}
+        <nav class="menu-opcoes">
+            <ul>
+                <li><a href="#">Sua Conta</a></li>
+                <li><a href="#">Lista de Desejos</a></li>
+                <li><a href="#">Cartão Fidelidade</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="#">Ajuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Adicionar o conteúdo da página-->
+    <div class="produto-back">
+        <div class="container">
+            <div class="produto">
+                <h1>Fuzzy Cardigan</h1>
+                <p>por apenas R$129,90</p>
 
-label[for=verde]::after {
-    background-color: #33CC66;
-    left: 0;
-}
+                <form>
+                    <fieldset class="cores">
+                        <legend>Escolha a cor:</legend>
 
-label[for=rosa]::after {
-    background-color: #FF6666;
-    left: 60px;
-}
+                        <input type="radio" name="cor" value="verde" id="verde" checked>
+                        <label for="verde">
+                            <img src="img/produtos/foto1-verde.png" alt="Produto na cor verde">
+                        </label>
 
-label[for=azul]::after {
-    background-color: #6666FF;
-    left: 120px;
-}
+                        <input type="radio" name="cor" value="rosa" id="rosa">
+                        <label for="rosa">
+                            <img src="img/produtos/foto1-rosa.png" alt="Produto na cor rosa">
+                        </label>
 
-.cores input:checked + label::after {
-    border:  6px solid rgba(0,0,0,0.3);
-}
+                        <input type="radio" name="cor" value="azul" id="azul">
+                        <label for="azul">
+                            <img src="img/produtos/foto1-azul.png" alt="Produto na cor azul">
+                        </label>
+                    </fieldset>
+                    <fieldset class="tamanho">
+                        <legend>Escolha o tamanho:</legend>
+                        <input type="radio" id="tamanho" name="tamanho" value="P">
+                        <label for="tamanho">P</label><br>
+                        <input type="radio" id="tamanho" name="tamanho" value="M">
+                        <label for="tamanho">M</label><br>
+                        <input type="radio" id="tamanho" name="tamanho" value="G">
+                        <label for="tamanho">G</label>
+                        
 
-.cores input[type=radio] {
-    display: none;
-}
+                    </fieldset>
+                    <button class="comprar">Comprar</button>
+                </form>
+            </div>
+            <div class="detalhes">
+                <h2>Detalhes do produto</h2>
+                <p>Esse é o melhor casaco de cardigan que você já viu.Excelente material italiano com estampa desenhada
+                    pelos artesãos da comunidade de Krotor nas ilhas gregas. Compre já e receba hoje mesmo pela nossa
+                    entrega a jato.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Característica</th>
+                            <th>Detalhe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Modelo</td>
+                            <td>Cardigan 7845</td>
+                        </tr>
+                        <tr>
+                            <td>Material</td>
+                            <td>Algodão e poliéster</td>
+                        </tr>
+                        <tr>
+                            <td>Cores</td>
+                            <td>Azul, Rosa e Verde</td>
+                        </tr>
+                        <tr>
+                            <td>Lavagem</td>
+                            <td>Lavar a mão</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <img src="img/logo-rodape.png" alt="Logo da Mirror Fashion">
 
-.cores input:not(:checked) + label img {
-    display: none;
-}
+            <ul class="social">
+                <li><a href="https://facebook.com/mirrorfashion">Facebook</a></li>
+                <li><a href="https://twitter.com/mirrorfashion">Twitter</a></li>
+                <li><a href="https://instagram.com/mirrorfashion">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
 
-.cores {
-    position: relative;
-    padding-top:  90px;
-}
-
-.cores label img {
-    display: block;
-    max-width: 100%;
-}
-
-.produto {
-    color: #333;
-    line-height: 1.3;
-    margin-top: 2em;
-}
-
-.produto h1 {
-    font-size: 1.8em;
-    font-weight: bold;
-}
-
-.produto p {
-    font-size: 1.2em;
-    font-style: italic;
-    margin-bottom: 1em;
-}
-
-.produto legend {
-    display: block;
-    font: bold 0.9em/2.5 Arial;
-    text-transform: uppercase;
-}
-
-.comprar {
-    background: #91BD3C;
-    border: none;
-    color: #333;
-
-    font-size: 1.4em;
-    text-transform: uppercase;
-
-    box-shadow: 0 1px 3px #777;
-
-    display: block;
-    padding: 0.5em 1em;
-    margin: 1em 0;
-}
-
-
-
-
-
-
+</html>
