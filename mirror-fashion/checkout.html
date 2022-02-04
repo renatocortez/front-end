@@ -12,7 +12,8 @@
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light" fixed-top>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"><!-- TEM ALGUM PROBLEMA NO MENU HAMBURGUER DO BOOTSTRAP -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent">
+			<!-- TEM ALGUM PROBLEMA NO MENU HAMBURGUER DO BOOTSTRAP -->
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<a class="navbar-brand" href="index.html">Mirror Fashion</a>
@@ -62,8 +63,20 @@
 							<dd>40</dd>
 
 							<dt>Preço</dt>
-							<dd>R$ 129,90</dd>
+							<dd id="preco">R$ 129,90</dd>
 						</dl>
+					</div>
+				</div>
+				<div class="card mb-3">
+					<div class="card-body">
+						<div class="form-group">
+							<label for="qtd">Quantidade:</label>
+							<input type="number" id="qtd" min="1" max="99" value="1" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="total">Total:</label>
+							<output id="total" class="form-control">R$ 129,90</output>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -131,6 +144,7 @@
 	</div>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/total.js"></script>
 </body>
 
 </html>
