@@ -1,7 +1,5 @@
-# front-end
- Curso de Front-end - Alura
+Front-end course - Alura
  
  Html - Css - JavaScript - Bootstrap - Jquery - Php - Sql
  
- Projeto: Criação de uma loja virtual de produtos para o público feminino
- 
+ Project: Creation of a virtual store of products for the female audience
